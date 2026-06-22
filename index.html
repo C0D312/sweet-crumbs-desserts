@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5c9cd">
+    <title>Sweet Crumbs | Desserts Made With Love</title>
+    <meta
+      name="description"
+      content="Sweet Crumbs makes mini cakes, dessert boxes, creme caramel, dessert cups, and custom celebration cakes in Sydney."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Sweet Crumbs home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" focusable="false">
+            <path d="M14 19h20l-2 21H16L14 19Z"></path>
+            <path d="M17 19c0-5 3-9 7-9s7 4 7 9"></path>
+            <path d="M19 25h10M18 31h12"></path>
+            <path d="M25 6c2-3 6-2 6 1 0 4-6 6-6 6s-6-2-6-6c0-3 4-4 6-1Z"></path>
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <strong>Sweet Crumbs</strong>
+          <small>Desserts made with love</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Photos</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#order" class="nav-order">Order</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-label="Sweet Crumbs dessert table">
+        <img
+          class="hero-image"
+          src="assets/sweet-crumbs-hero.png"
+          alt="Pastel mini cakes, chocolate cake, creme caramel, dessert cups, and boxed cupcakes on a cream dessert table"
+        >
+        <div class="hero-shade" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow">Sydney dessert shop</p>
+          <h1>
+            <span class="hero-serif">Sweet</span>
+            <span class="hero-script">Crumbs</span>
+          </h1>
+          <p class="hero-copy">
+            Made with love, boxed for birthdays, thank-yous, weekends, and every small celebration in between.
+          </p>
+
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#order">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M5 7h14l-1.2 13H6.2L5 7Z"></path>
+                <path d="M9 7a3 3 0 0 1 6 0"></path>
+              </svg>
+              Order now
+            </a>
+            <a class="button button-secondary" href="#menu">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M5 5h14M5 12h14M5 19h14"></path>
+              </svg>
+              View menu
+            </a>
+          </div>
+
+          <div class="hero-notes" aria-label="Sweet Crumbs highlights">
+            <span>5.0 from 120 reviews</span>
+            <span>Pickup and local delivery</span>
+            <span>Custom orders welcome</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="order-band" id="order">
+        <div class="section-heading">
+          <p class="eyebrow">Quick order</p>
+          <h2>Build a dessert box</h2>
+          <p>Choose your sweets, leave the details, and Sweet Crumbs will confirm your order.</p>
+        </div>
+
+        <form class="order-grid" id="orderForm">
+          <div class="form-panel">
+            <div class="field-row">
+              <label>
+                Your name
+                <input type="text" name="name" autocomplete="name" placeholder="Name" required>
+              </label>
+              <label>
+                Phone or email
+                <input type="text" name="contact" autocomplete="email" placeholder="Contact details" required>
+              </label>
+            </div>
+
+            <div class="field-row">
+              <label>
+                Date needed
+                <input type="date" name="date" required>
+              </label>
+              <label>
+                Occasion
+                <select name="occasion">
+                  <option>Birthday</option>
+                  <option>Bridal shower</option>
+                  <option>Thank you gift</option>
+                  <option>Weekend treat</option>
+                  <option>Custom event</option>
+                </select>
+              </label>
+            </div>
+
+            <fieldset class="choice-group">
+              <legend>Desserts</legend>
+              <label>
+                <input type="checkbox" name="dessert" value="Mini Cakes" data-price="8" data-label="Mini Cakes">
+                <span>Mini Cakes <b>from $8 each</b></span>
+              </label>
+              <label>
+                <input type="checkbox" name="dessert" value="Box of 4 Mini Cakes" data-price="28" data-label="Box of 4 Mini Cakes">
+                <span>Box of 4 Mini Cakes <b>$28</b></span>
+              </label>
+              <label>
+                <input type="checkbox" name="dessert" value="Creme Caramel Flan" data-price="25" data-label="Creme Caramel Flan">
+                <span>Creme Caramel Flan <b>$25</b></span>
+              </label>
+              <label>
+                <input type="checkbox" name="dessert" value="Dessert Cups" data-price="5" data-label="Dessert Cups">
+                <span>Dessert Cups <b>from $5</b></span>
+              </label>
+              <label>
+                <input type="checkbox" name="dessert" value="Custom Celebration Cake" data-price="60" data-label="Custom Celebration Cake">
+                <span>Custom Celebration Cake <b>from $60</b></span>
+              </label>
+            </fieldset>
+
+            <fieldset class="delivery-group">
+              <legend>Pickup or delivery</legend>
+              <label>
+                <input type="radio" name="delivery" value="Pickup" checked>
+                <span>Pickup</span>
+              </label>
+              <label>
+                <input type="radio" name="delivery" value="Local delivery">
+                <span>Local delivery</span>
+              </label>
+            </fieldset>
+
+            <label>
+              Notes
+              <textarea name="notes" rows="4" placeholder="Flavours, colours, quantity, delivery suburb, or allergies"></textarea>
+            </label>
+          </div>
+
+          <aside class="summary-panel" aria-live="polite">
+            <p class="eyebrow">Your box</p>
+            <h3 id="summaryTitle">Pick your desserts</h3>
+            <ul id="summaryItems">
+              <li>No desserts selected yet.</li>
+            </ul>
+            <div class="summary-total">
+              <span>Estimated minimum</span>
+              <strong id="summaryTotal">$0</strong>
+            </div>
+            <p id="summaryMeta">Pickup selected. Choose a date to finish your enquiry.</p>
+            <button class="button button-primary submit-button" type="submit">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M4 4h16v16H4z"></path>
+                <path d="M4 7l8 6 8-6"></path>
+              </svg>
+              Send enquiry
+            </button>
+          </aside>
+        </form>
+      </section>
+
+      <section class="menu-section" id="menu">
+        <div class="section-heading">
+          <p class="eyebrow">Menu</p>
+          <h2>Treats for every sweet tooth</h2>
+          <p>Small batches, soft colours, pretty packaging, and desserts that feel made for the moment.</p>
+        </div>
+
+        <div class="filter-bar" role="tablist" aria-label="Menu filters">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-button" type="button" data-filter="cakes" aria-pressed="false">Cakes</button>
+          <button class="filter-button" type="button" data-filter="boxes" aria-pressed="false">Boxes</button>
+          <button class="filter-button" type="button" data-filter="classics" aria-pressed="false">Classics</button>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card" data-group="cakes">
+            <figure>
+              <img class="crop-pink-cake" src="assets/sweet-crumbs-hero.png" alt="Pink mini cake with piped frosting">
+            </figure>
+            <div class="menu-card-copy">
+              <span>from $8 each</span>
+              <h3>Mini Cakes</h3>
+              <p>Petite frosted cakes in vanilla, chocolate, strawberry, or seasonal flavours.</p>
+              <button class="text-button add-item" type="button" data-item="Mini Cakes">Add to order</button>
+            </div>
+          </article>
+
+          <article class="menu-card" data-group="boxes">
+            <figure>
+              <img class="crop-cupcakes" src="assets/sweet-crumbs-hero.png" alt="Box of piped mini cupcakes">
+            </figure>
+            <div class="menu-card-copy">
+              <span>$28</span>
+              <h3>Box of 4 Mini Cakes</h3>
+              <p>A sweet little mix for gifts, birthdays, table styling, or a cozy dessert night.</p>
+              <button class="text-button add-item" type="button" data-item="Box of 4 Mini Cakes">Add to order</button>
+            </div>
+          </article>
+
+          <article class="menu-card" data-group="classics">
+            <figure>
+              <img class="crop-flan" src="assets/sweet-crumbs-hero.png" alt="Creme caramel flan with glossy caramel">
+            </figure>
+            <div class="menu-card-copy">
+              <span>$25</span>
+              <h3>Creme Caramel Flan</h3>
+              <p>Silky custard, deep caramel, and a glossy finish made for sharing.</p>
+              <button class="text-button add-item" type="button" data-item="Creme Caramel Flan">Add to order</button>
+            </div>
+          </article>
+
+          <article class="menu-card" data-group="classics">
+            <figure>
+              <img class="crop-cup" src="assets/sweet-crumbs-hero.png" alt="Layered dessert cup with cocoa dusting">
+            </figure>
+            <div class="menu-card-copy">
+              <span>from $5</span>
+              <h3>Dessert Cups</h3>
+              <p>Layered cups with cream, chocolate, sponge, and soft tiramisu-style textures.</p>
+              <button class="text-button add-item" type="button" data-item="Dessert Cups">Add to order</button>
+            </div>
+          </article>
+
+          <article class="menu-card" data-group="cakes">
+            <figure>
+              <img class="crop-chocolate" src="assets/sweet-crumbs-hero.png" alt="Chocolate celebration cake with piped frosting">
+            </figure>
+            <div class="menu-card-copy">
+              <span>from $60</span>
+              <h3>Custom Celebration Cakes</h3>
+              <p>Soft buttercream cakes with your colour palette, message, and event mood.</p>
+              <button class="text-button add-item" type="button" data-item="Custom Celebration Cake">Add to order</button>
+            </div>
+          </article>
+
+          <article class="menu-card menu-feature" data-group="boxes">
+            <figure>
+              <img class="crop-table" src="assets/sweet-crumbs-hero.png" alt="Dessert table with cakes, flan, and dessert cups">
+            </figure>
+            <div class="menu-card-copy">
+              <span>custom quote</span>
+              <h3>Dessert Tables</h3>
+              <p>Styled spreads for showers, birthdays, office treats, and family celebrations.</p>
+              <a class="text-button" href="#order">Plan a table</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="gallery">
+        <div class="section-heading">
+          <p class="eyebrow">Photos</p>
+          <h2>Pretty, boxed, and ready to share</h2>
+        </div>
+
+        <div class="gallery-grid" aria-label="Sweet Crumbs dessert photo gallery">
+          <img class="crop-pink-cake" src="assets/sweet-crumbs-hero.png" alt="Pink cake detail">
+          <img class="crop-chocolate" src="assets/sweet-crumbs-hero.png" alt="Chocolate cake detail">
+          <img class="crop-flan" src="assets/sweet-crumbs-hero.png" alt="Creme caramel detail">
+          <img class="crop-cup" src="assets/sweet-crumbs-hero.png" alt="Layered dessert cup detail">
+          <img class="crop-cupcakes" src="assets/sweet-crumbs-hero.png" alt="Boxed cupcakes detail">
+          <img class="crop-table" src="assets/sweet-crumbs-hero.png" alt="Dessert table detail">
+        </div>
+      </section>
+
+      <section class="about-section" id="reviews">
+        <div class="about-copy">
+          <p class="eyebrow">About</p>
+          <h2>Made with love, baked to delight.</h2>
+          <p>
+            Sweet Crumbs creates mini cakes, dessert boxes, flan, dessert cups, and custom orders for all occasions.
+            Every order is styled with a soft, polished look and packed for pickup or local delivery.
+          </p>
+          <div class="about-list">
+            <span>Sydney, NSW</span>
+            <span>7 days notice preferred</span>
+            <span>Pickup and local delivery available</span>
+          </div>
+        </div>
+
+        <div class="review-grid">
+          <article class="review-card">
+            <div aria-label="5 star rating">5 / 5</div>
+            <p>"The mini cakes were gorgeous and tasted even better than they looked."</p>
+            <span>Birthday box order</span>
+          </article>
+          <article class="review-card">
+            <div aria-label="5 star rating">5 / 5</div>
+            <p>"Everything was packed beautifully. The creme caramel disappeared first."</p>
+            <span>Family dessert table</span>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Thank you for choosing Sweet Crumbs.</p>
+      <div>
+        <a href="mailto:hello@sweetcrumbs.com.au">hello@sweetcrumbs.com.au</a>
+        <span>@sweetcrumbs.desserts</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
